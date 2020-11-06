@@ -107,6 +107,7 @@
   <ItemGroup>
     <Compile Include="Ext.cs" />
     <Compile Include="NepMain.cs" />
+    <Compile Include="NepMain3.cs" />
     <Compile Include="NepMain2.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

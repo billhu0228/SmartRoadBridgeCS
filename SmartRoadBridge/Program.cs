@@ -25,19 +25,19 @@ namespace SmartRoadBridge
                 
         static void Main(string[] args)
         {
-            NepMain2 Worker = new NepMain2("cdb-2ashfo5g.bj.tencentcdb.com", "10033", "bill", "0okmMKO)", "nep_dev");
+            NepMain3 Worker = new NepMain3("cdb-2ashfo5g.bj.tencentcdb.com", "10033", "bill", "0okmMKO)", "nep_dev");
             Worker.RefreshEITbl();
             Worker.RefreshBridgeTbl();
-            Worker.RefreshSubTbl();
-            Worker.OverrideColumn(RootPart + @"20191213-肯尼亚高架桥施工图设计(19406)\05 数据库\SubOverride.csv");
-            Worker.RefreshH1(RootPart + @"20191213-肯尼亚高架桥施工图设计(19406)\05 数据库\H1Override.csv");
-            Worker.RefreshBoxTblPlan();
-            Worker.NewRefreshCapBeamTbl();
-            Worker.OverrideCapBeamTbl(RootPart + @"20191213-肯尼亚高架桥施工图设计(19406)\05 数据库\CBOverride.csv");
-            Worker.RefreshBoxTblEleAndPlinth();
-            Worker.RefreshBeamParaTbl();
-            Worker.RefreshFundTbl();
-            Worker.CreateBlkTbl();
+            //Worker.RefreshSubTbl();
+            //Worker.OverrideColumn(RootPart + @"20191213-肯尼亚高架桥施工图设计(19406)\05 数据库\SubOverride.csv");
+            //Worker.RefreshH1(RootPart + @"20191213-肯尼亚高架桥施工图设计(19406)\05 数据库\H1Override.csv");
+            //Worker.RefreshBoxTblPlan();
+            //Worker.NewRefreshCapBeamTbl();
+            //Worker.OverrideCapBeamTbl(RootPart + @"20191213-肯尼亚高架桥施工图设计(19406)\05 数据库\CBOverride.csv");
+            //Worker.RefreshBoxTblEleAndPlinth();
+            //Worker.RefreshBeamParaTbl();
+            //Worker.RefreshFundTbl();
+            //Worker.CreateBlkTbl();
             Worker.Shutdown();
         }
 
